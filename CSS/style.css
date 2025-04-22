@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1;
+  color: #0d6efd;
+}
+
+/* Override the btn-outline-secondary to have a black border and black text */
+.btn-outline-secondary {
+  border-color: black;
+  color: black;
+  background-color: transparent;
+}
+
+/* On hover, change text to white and background to #1e1e1e */
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  border-color: black;
+  color: white; /* White text */
+  background-color: #1e1e1e; /* Dark background */
+}
+
+/* On active click, keep the hover effect */
+.btn-outline-secondary:active {
+  border-color: black;
+  color: white; /* White text */
+  background-color: #1e1e1e; /* Dark background */
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+.navbar-brand {
+  font-family: inter;
+  font-weight: 800;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5); /* Add a subtle blue glow */
+}
+
+/* Hero Section */
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+  border-radius: 1.625rem;
+  margin-bottom: 4.5rem;
+}
+
+/* About Us Section */
+.about-us {
+  font-size: 1.8rem;
+  font-family: "Syne";
+  font-weight: 600;
+}
+
+/* Recent Work  */
+.recent-work {
+  text-align: left;
+  font-size: 1.8rem;
+  font-family: "Syne";
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 2rem;
+}
+
+/* Media Queries -------- */
+/* Small devices (576px) */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-us {
+    font-size: 2rem;
+  }
+
+  .recent-work {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .max-img-size {
+    max-width: 300px; /* You can adjust this size based on your preference */
+    margin-right: 15px; /* Add space between the images in the row */
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
